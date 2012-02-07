@@ -1,0 +1,463 @@
+21 Nov 2011 16:53:12,395 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.StateMachine - TIBCO-AMX-HPA-014647: Acknowledging message: hi
+21 Nov 2011 16:53:13,333 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.node.Control - TIBCO-AMX-HPA-014001: Node is starting with UUID 80bac930-3314-0011-171f-9a3ecab39e91.
+21 Nov 2011 16:53:13,333 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.node.Control - TIBCO-AMX-HPA-014025: Installing Java SecurityManager
+21 Nov 2011 16:53:13,333 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.node.License - TIBCO-AMX-HPA-014002: Checking license...
+21 Nov 2011 16:53:13,349 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.node.License - TIBCO-AMX-HPA-014005: TIBCO ActiveMatrix: license never expires!
+21 Nov 2011 16:54:13,395 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.StateMachine - TIBCO-AMX-HPA-014647: Acknowledging message: hi
+21 Nov 2011 16:53:13,395 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.node.Node - TIBCO-AMX-HPA-014627: TIBCO Host is bound to SystemHost
+21 Nov 2011 16:53:13,755 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.node.JMXConnectorManager - Started JMX connector server
+21 Nov 2011 16:55:13,786 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.node.Node - TIBCO-AMX-HPA-014646: Consumer for queue hi
+21 Nov 2011 16:53:13,802 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.tm.RecoveryConfiguration - TIBCO-AMX-HPA-014913: Transaction Log is enabled
+21 Nov 2011 16:57:13,802 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.tm.RecoveryConfiguration - TIBCO-AMX-HPA-014915: not acknowledging
+21 Nov 2011 16:53:13,880 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.tm.Activator - TIBCO-AMX-HPA-014918: Transaction support started
+21 Nov 2011 16:53:13,895 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.web.jaas.Activator - TIBCO-AMX-HPA-014510: Jetty JAAS config support started
+21 Nov 2011 16:53:15,364 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco.admin.default.password.credential.provider ************
+  resourceAdapterName = trinitypassword.rar
+  resourceAdapter     = trinitypassword.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco.admin.default.password.credential.providerDevNode_1.0.0 [82]
+  state               = RUNNING
+  interfaceType       = com.tibco.trinity.runtime.core.provider.credential.password.ConnectorConnectionFactory
+  references          = none
+  attributes          = 
+   protectionParameter = #!xwJZvwup6wMIkTWUzw3pCO7/J/abLltT3NkJVFByBuDz2ElTbWw2HgtVzsh4WhZqj2R0AHITsA8bZX3hRbHgNR7/lT3R6xHWcItckOBuLrc=
+   usernameToken = user1,#!W3z0e8nURMyp29K/k84jWyRJa4jag4kvJcQdb7ozF4w=
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,395 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco.admin.default.single_signon_TrinityCredentialProvider_DevNode ************
+  resourceAdapterName = trinitycredential.rar
+  resourceAdapter     = trinitycredential.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco.admin.default.single_signon_TrinityCredentialProvider_DevNodeDevNode_1.0.0 [158]
+  state               = RUNNING
+  interfaceType       = com.tibco.trinity.runtime.core.provider.credential.trinity.ConnectorConnectionFactory
+  references          = java:tibco.admin.default.password.credential.provider 
+  attributes          = 
+   credentialProvider = java:tibco.admin.default.password.credential.provider
+   credentialServerURLs = service:jmx:jmxmp://jkariche-t410.apac.tibco.com:6041,
+   keyStoreLocation = tibco.admin.default.tibco.admin.default.single_signon_TrinityCredentialProvider_DevNode.jceks
+   credentialServerHost = 0.0.0.0
+   keyStoreType = jceks
+   keyStoreRefreshInterval = 60000
+   keyAlias = user1
+   keyPassword = #!xwJZvwup6wMIkTWUzw3pCO7/J/abLltT3NkJVFByBuDz2ElTbWw2HgtVzsh4WhZqj2R0AHITsA8bZX3hRbHgNR7/lT3R6xHWcItckOBuLrc=
+   enableSSL = true
+   credentialServerPort = 6041
+   keyStorePassword = #!1onc9XOjoS72TeXfSskNV+8soa1Ohj0fhGenlqH4I5VLR5k02Ec8tB+G9K4DufzsNQyBzno1k9DBm/PX8Pj3VQ3OZYqdlCDPF2ignxkbYxM=
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,395 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco.admin.default.single_signon_SAMLSubjectProvider_DevNode ************
+  resourceAdapterName = trinitysubject.rar
+  resourceAdapter     = trinitysubject.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco.admin.default.single_signon_SAMLSubjectProvider_DevNodeDevNode_1.0.0 [107]
+  state               = RUNNING
+  interfaceType       = com.tibco.trinity.runtime.core.provider.identity.subject.ConnectorConnectionFactory
+  references          = java:tibco.admin.default.single_signon_TrinityCredentialProvider_DevNode 
+  attributes          = 
+   enableCredentialStoreAccess = true
+   sslCipherStrength = NoExportableCiphers
+   identityStoreServiceProvider = java:tibco.admin.default.single_signon_TrinityCredentialProvider_DevNode
+   keyAlias = tcp.keyalias
+   keyPassword = #!odsWMY0wNkJoTNhvJhcWUBF4+rJWe5PzFt6jp2Z15bkewm70/QT6cRGSeYOFnaK5U1qSRgJybX4BTWWNhIwe4JCIagIDWyXjuFaZcH78v1U=
+   trustStoreServiceProvider = java:tibco.admin.default.single_signon_TrinityCredentialProvider_DevNode
+   enableTrustStoreAccess = true
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,411 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco.admin.default.keystore ************
+  resourceAdapterName = trinitykeystore.rar
+  resourceAdapter     = trinitykeystore.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco.admin.default.keystoreDevNode_1.0.0 [25]
+  state               = RUNNING
+  interfaceType       = com.tibco.trinity.runtime.core.provider.credential.keystore.ConnectorConnectionFactory
+  references          = java:tibco.admin.default.single_signon_SAMLSubjectProvider_DevNode 
+  attributes          = 
+   keyStoreLocation = https://jkariche-t410.apac.tibco.com:19767/amxadministrator/svn/trunk/artifacts/keystore/admin_default_keystore.jceks,
+   keyStoreType = JCEKS
+   sslIdentityProvider = java:tibco.admin.default.single_signon_SAMLSubjectProvider_DevNode
+   keyStoreRefreshInterval = 0
+   keyStoreCacheLocation = tibco.admin.default.keystore.jceks
+   keyStorePassword = #!sWWU1EXwD0BLkPZxmOMgdmp9K9MxjJ6NN740v1jxXfg=
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,411 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco.admin.default.messagingBus_XA_NonSSL_DevEnvironment_DevNode_passwordCredentialProvider ************
+  resourceAdapterName = trinitysubject.rar
+  resourceAdapter     = trinitysubject.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco.admin.default.messagingBus_XA_NonSSL_DevEnvironment_DevNode_passwordCredentialProviderDevNode_1.0.0 [47]
+  state               = RUNNING
+  interfaceType       = com.tibco.trinity.runtime.core.provider.identity.subject.ConnectorConnectionFactory
+  references          = java:tibco.admin.default.keystore 
+  attributes          = 
+   enableCredentialStoreAccess = true
+   identityStoreServiceProvider = java:tibco.admin.default.keystore
+   keyAlias = tibco.admin.default.messagingBus_XA_NonSSL_DevEnvironment_tibco.admin.default.messagingBus_XA_NonSSL_DevEnvironment_DevNode_keyAlias
+   keyPassword = #!r0DromERVdNhYD75jFoDkeXWL23N6nDZoxzRxxmHnOg0yHKFxGW/NL9eiG12FikZTWHRLT65Tku/UJ/QoiZBavirtPyqwnA/GNyg6Er/BIs=
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,442 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco.admin.default.messagingBus_XA_NonSSL_DevEnvironment ************
+  resourceAdapterName = svxa.rar
+  resourceAdapter     = svxa.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco.admin.default.messagingBus_XA_NonSSL_DevEnvironmentDevNode_1.0.0 [44]
+  state               = RUNNING
+  interfaceType       = com.tibco.amf.sharedresource.runtime.core.sv.ems.XAConnectionFactory
+  references          = java:tibco.admin.default.messagingBus_XA_NonSSL_DevEnvironment_DevNode_passwordCredentialProvider 
+  attributes          = 
+   maxOutboundSessionPoolSize = 24
+   passwordCredentialProvider = java:tibco.admin.default.messagingBus_XA_NonSSL_DevEnvironment_DevNode_passwordCredentialProvider
+   maxConnectionPoolSize = 12
+   reconnectAttemptCount = 30
+   serverUrl = tcp://localhost:7222
+   reconnectAttemptDelay = 500
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,458 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco/amx/platform/transport/gms_DevNode_passwordCredentialProvider ************
+  resourceAdapterName = trinitysubject.rar
+  resourceAdapter     = trinitysubject.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco_amx_platform_transport_gms_DevNode_passwordCredentialProviderDevNode_1.0.0 [163]
+  state               = RUNNING
+  interfaceType       = com.tibco.trinity.runtime.core.provider.identity.subject.ConnectorConnectionFactory
+  references          = java:tibco.admin.default.keystore 
+  attributes          = 
+   enableCredentialStoreAccess = true
+   identityStoreServiceProvider = java:tibco.admin.default.keystore
+   keyAlias = tibco/amx/platform/transport/gms_tibco/amx/platform/transport/gms_DevNode_keyAlias
+   keyPassword = #!lKqLPU8JdvqBot0TP04eKW5YQIHn+/Odm2pvTrg4KCvuaVCOxpRVslcnXfzWolUMtCrIxnakHrdIbrm1z7xIpS3azQZFavD9IgiDORNoMUk=
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,489 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco.admin.default.single_signon_SAMLSigner_DevNode ************
+  resourceAdapterName = trinitysaml.rar
+  resourceAdapter     = trinitysaml.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco.admin.default.single_signon_SAMLSigner_DevNodeDevNode_1.0.0 [204]
+  state               = RUNNING
+  interfaceType       = com.tibco.trinity.runtime.core.provider.authn.saml.ConnectorConnectionFactory
+  references          = java:tibco.admin.default.single_signon_SAMLSubjectProvider_DevNode 
+  attributes          = 
+   samlValiditySeconds = 600
+   enableSAML11Assertion = false
+   tokenSigningService = java:tibco.admin.default.single_signon_SAMLSubjectProvider_DevNode
+   enableSAML20Assertion = true
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,505 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco.admin.default.single_signon_SAMLValidator_DevNode ************
+  resourceAdapterName = trinitysaml.rar
+  resourceAdapter     = trinitysaml.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco.admin.default.single_signon_SAMLValidator_DevNodeDevNode_1.0.0 [234]
+  state               = RUNNING
+  interfaceType       = com.tibco.trinity.runtime.core.provider.authn.saml.ConnectorConnectionFactory
+  references          = java:tibco.admin.default.single_signon_SAMLSubjectProvider_DevNode 
+  attributes          = 
+   samlValiditySeconds = 600
+   enableSAML11Assertion = false
+   tokenValidationService = java:tibco.admin.default.single_signon_SAMLSubjectProvider_DevNode
+   enableSAML20Assertion = true
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,520 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco.admin.default.messagingBus_NonXA_NonSSL_DevEnvironment_DevNode_passwordCredentialProvider ************
+  resourceAdapterName = trinitysubject.rar
+  resourceAdapter     = trinitysubject.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco.admin.default.messagingBus_NonXA_NonSSL_DevEnvironment_DevNode_passwordCredentialProviderDevNode_1.0.0 [276]
+  state               = RUNNING
+  interfaceType       = com.tibco.trinity.runtime.core.provider.identity.subject.ConnectorConnectionFactory
+  references          = java:tibco.admin.default.keystore 
+  attributes          = 
+   enableCredentialStoreAccess = true
+   identityStoreServiceProvider = java:tibco.admin.default.keystore
+   keyAlias = tibco.admin.default.messagingBus_NonXA_NonSSL_DevEnvironment_tibco.admin.default.messagingBus_NonXA_NonSSL_DevEnvironment_DevNode_keyAlias
+   keyPassword = #!fopAOsFH6rSgWM1NRqoCmkmDTK3+XwodDx2kjknh2mls+gJrkP++E6ei4wASsqNf9WBSeBH81RusH4ibAA9iLNQvDrmbGEqY+VIat+29ZhE=
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,520 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco.admin.default.messagingBus_NonXA_NonSSL_DevEnvironment ************
+  resourceAdapterName = sv.rar
+  resourceAdapter     = sv.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco.admin.default.messagingBus_NonXA_NonSSL_DevEnvironmentDevNode_1.0.0 [38]
+  state               = RUNNING
+  interfaceType       = com.tibco.amf.sharedresource.runtime.core.sv.ems.ConnectionFactory
+  references          = java:tibco.admin.default.messagingBus_NonXA_NonSSL_DevEnvironment_DevNode_passwordCredentialProvider 
+  attributes          = 
+   maxOutboundSessionPoolSize = 24
+   passwordCredentialProvider = java:tibco.admin.default.messagingBus_NonXA_NonSSL_DevEnvironment_DevNode_passwordCredentialProvider
+   maxConnectionPoolSize = 12
+   reconnectAttemptCount = 30
+   serverUrl = tcp://localhost:7222
+   reconnectAttemptDelay = 500
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,552 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.ResourceManager - TIBCO-AMX-HPA-014247: Added shared resource 
+ConnectionFactory:
+  name = ************ java:tibco/amx/platform/transport/gms ************
+  resourceAdapterName = qin.rar
+  resourceAdapter     = qin.rar
+  registered          = true
+  bundle              = amx.tibcohost.sharedresource.tibco_amx_platform_transport_gmsDevNode_1.0.0 [317]
+  state               = RUNNING
+  interfaceType       = com.tibco.amf.sharedresource.runtime.core.qin.QinConnectionFactory
+  references          = java:tibco/amx/platform/transport/gms_DevNode_passwordCredentialProvider 
+  attributes          = 
+   passwordCredentialProvider = java:tibco/amx/platform/transport/gms_DevNode_passwordCredentialProvider
+   reconnectAttemptCount = 1
+   serverUrl = tcp://localhost:7222
+   reconnectAttemptDelay = 2000
+  pool data           = 
+   max pool size = 20
+   min pool size = 5
+
+21 Nov 2011 16:53:15,567 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jca.Activator - TIBCO-AMX-HPA-014241: JCA started
+21 Nov 2011 16:53:15,973 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.jaasconfig.Activator - TIBCO-AMX-HPA-014111: JAAS configuration extender started
+21 Nov 2011 16:53:16,442 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.web.JettyManager - TIBCO-AMX-HPA-014323: Creating Jetty server httpConnector of type org.mortbay.jetty.nio.SelectChannelConnector
+21 Nov 2011 16:53:16,708 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.web.jetty.httpConnector - TIBCO-AMX-HPA-014364: Started Jetty server httpConnector
+21 Nov 2011 16:53:16,739 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.web.JettyManager - TIBCO-AMX-HPA-014349: Processed bundle amx.tibcohost.sharedresource.httpConnectorDevNode_1.0.0 [35]
+21 Nov 2011 16:53:16,880 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.web.JettyManager - TIBCO-AMX-HPA-014362: Scan completed
+21 Nov 2011 16:53:16,880 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.web.Activator - TIBCO-AMX-HPA-014356: Jetty web support started
+21 Nov 2011 16:53:16,911 [Start Level Event Dispatcher] [INFO ] com.tibco.amx.hpa.web.Deployer - TIBCO-AMX-HPA-014414: Jetty WAR Deployer started
+21 Nov 2011 16:59:08,333 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1:  Consumer for queue node-log4j.xml
+21 Nov 2011 16:53:18,395 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_implementation.webapp_1.1.0:1.0.0
+21 Nov 2011 16:59:18,489 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: Acknowledging message: hi
+21 Nov 2011 16:59:28,552 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_messaging.bus.abstract.to.ems.converter_1.0.0:1.0.0
+21 Nov 2011 16:59:38,583 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1:  Consumer for queue node-log4j.xml
+21 Nov 2011 16:53:18,942 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_messaging.bus_1.0.0:1.0.0
+21 Nov 2011 16:53:18,973 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_binding.jms_1.1.0:1.0.0
+21 Nov 2011 16:53:19,005 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_binding.tcp_1.1.0:1.0.0
+21 Nov 2011 16:53:19,020 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_binding.mbean_1.0.0:1.0.0
+21 Nov 2011 16:53:19,036 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_binding.management_1.0.0:1.0.0
+21 Nov 2011 17:53:19,052 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: Acknowledging message: hi
+21 Nov 2011 16:53:19,067 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_ComponentFrameworkStatusNotificationService_MANAGEMENTReference_Binding1_proxy:1.0.0
+21 Nov 2011 16:53:19,083 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_outbound_reference_ComponentFrameworkStatusNotificationService_MANAGEMENTReference_Binding1_proxy:1.0.0
+21 Nov 2011 16:53:19,098 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0:1.0.0
+21 Nov 2011 16:53:19,114 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_ListComponentsService_ListComponentsService_management_binding:1.0.0
+21 Nov 2011 16:53:19,505 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_outbound_reference_ListComponentsService_ListComponentsService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:19,520 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_ListComponentsService_ListComponentsService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:19,536 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_ListComponentsService_ListComponentsService_virtualization:1.0.0
+21 Nov 2011 16:53:19,536 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_GetComponentDetailService_GetComponentDetailService_management_binding:1.0.0
+21 Nov 2011 16:53:19,552 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_outbound_reference_GetComponentDetailService_GetComponentDetailService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:19,598 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_GetComponentDetailService_GetComponentDetailService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:19,614 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_GetComponentDetailService_GetComponentDetailService_virtualization:1.0.0
+21 Nov 2011 16:53:19,630 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_GetComponentFrameworkStatusService_GetComponentFrameworkStatusService_management_binding:1.0.0
+21 Nov 2011 16:53:19,630 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_outbound_reference_GetComponentFrameworkStatusService_GetComponentFrameworkStatusService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:19,645 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_GetComponentFrameworkStatusService_GetComponentFrameworkStatusService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:19,661 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_GetComponentFrameworkStatusService_GetComponentFrameworkStatusService_virtualization:1.0.0
+21 Nov 2011 16:53:19,661 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_GetComponentLoggingConfigurationService_GetComponentLoggingConfigurationService_management_binding:1.0.0
+21 Nov 2011 16:53:19,677 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_outbound_reference_GetComponentLoggingConfigurationService_GetComponentLoggingConfigurationService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:19,692 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_GetComponentLoggingConfigurationService_GetComponentLoggingConfigurationService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:19,708 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_GetComponentLoggingConfigurationService_GetComponentLoggingConfigurationService_virtualization:1.0.0
+21 Nov 2011 16:53:20,114 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_SetComponentDependenciesService_SetComponentDependenciesService_management_binding:1.0.0
+21 Nov 2011 16:53:20,130 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_outbound_reference_SetComponentDependenciesService_SetComponentDependenciesService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:20,130 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_SetComponentDependenciesService_SetComponentDependenciesService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:20,145 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_SetComponentDependenciesService_SetComponentDependenciesService_virtualization:1.0.0
+21 Nov 2011 16:53:20,161 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_SetComponentImplementationAssociationService_SetComponentImplementationAssociationService_management_binding:1.0.0
+21 Nov 2011 16:53:20,177 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_outbound_reference_SetComponentImplementationAssociationService_SetComponentImplementationAssociationService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:20,192 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_SetComponentImplementationAssociationService_SetComponentImplementationAssociationService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:20,208 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_SetComponentImplementationAssociationService_SetComponentImplementationAssociationService_virtualization:1.0.0
+21 Nov 2011 16:53:20,223 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_SetComponentPropertiesService_SetComponentPropertiesService_management_binding:1.0.0
+21 Nov 2011 16:53:20,239 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_outbound_reference_SetComponentPropertiesService_SetComponentPropertiesService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:20,645 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_SetComponentPropertiesService_SetComponentPropertiesService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:20,661 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_SetComponentPropertiesService_SetComponentPropertiesService_virtualization:1.0.0
+21 Nov 2011 16:53:20,661 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_ListComponentSummariesService_ListComponentSummariesService_management_binding:1.0.0
+21 Nov 2011 16:53:20,692 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_outbound_reference_ListComponentSummariesService_ListComponentSummariesService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:20,692 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_ListComponentSummariesService_ListComponentSummariesService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:20,708 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_ListComponentSummariesService_ListComponentSummariesService_virtualization:1.0.0
+21 Nov 2011 16:53:20,723 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_UpdateAllComponentImplementationAssociationService_UpdateAllComponentImplementationAssociationService_management_binding:1.0.0
+21 Nov 2011 16:53:20,723 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_outbound_reference_UpdateAllComponentImplementationAssociationService_UpdateAllComponentImplementationAssociationService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:21,364 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_UpdateAllComponentImplementationAssociationService_UpdateAllComponentImplementationAssociationService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:21,364 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_UpdateAllComponentImplementationAssociationService_UpdateAllComponentImplementationAssociationService_virtualization:1.0.0
+21 Nov 2011 16:53:21,380 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_UpdateAllDependentComponentsService_UpdateAllDependentComponentsService_management_binding:1.0.0
+21 Nov 2011 16:53:21,395 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_outbound_reference_UpdateAllDependentComponentsService_UpdateAllDependentComponentsService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:21,411 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_UpdateAllDependentComponentsService_UpdateAllDependentComponentsService_management_binding_proxy:1.0.0
+21 Nov 2011 16:53:21,427 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_ComponentFrameworkServices_1.0.0_inbound_service_UpdateAllDependentComponentsService_UpdateAllDependentComponentsService_virtualization:1.0.0
+21 Nov 2011 16:53:21,427 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyAgent_GovernanceAgentComponent_1.3.0_outbound_reference_GovernanceAgentListenerPT_virtualization:1.0.0
+21 Nov 2011 16:53:21,442 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyAgent_GovernanceAgentComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:21,786 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyAgent_GovernanceAgentComponent_1.3.0_inbound_service_PolicyAgentPT_PolicyAgentPT_PolicyAgentPT_PolicyAgentPT_virtualization:1.0.0
+21 Nov 2011 16:53:21,802 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyAgent_GovernanceAgentComponent_1.3.0_inbound_service_GovernanceAgentPT_GovernanceAgentPT_GovernanceAgentPT_GovernanceAgentPT_virtualization:1.0.0
+21 Nov 2011 16:53:21,817 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyAgent_PolicyAgentComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:21,848 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyAgent_PolicyRuntimeStoreComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:21,864 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyAgent_PolicyDecisionPointComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,036 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_AuthenticationByJaasComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,052 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_CredentialMappingComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,067 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_LoggingActionComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,083 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_ComponentFrameworkActionComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,098 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_SharedResourceManagerComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,161 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_AuthenticationActionComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,161 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_AuthorizationActionComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,192 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_TimeStampActionComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,208 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_EncryptionActionComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,223 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_SignatureActionComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,255 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_WssProcessorActionComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,270 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_VerifyDecryptionActionComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,286 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_VerifyAuthenticationActionComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,302 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_VerifyTimestampActionComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,317 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_PolicyActions_AuthenticationBySamlComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,333 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_pepHttp_HttpFilterComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,348 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_pepSpline_SplineInterceptorComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,364 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_pepSvcProxy_SvcProxyPepComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,380 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_AMXGovMessageInterceptor_AMXGovMsgInterceptorComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:22,583 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_AMXServiceProbe_AMXServiceProbeComponent_2.1.0:1.0.0
+21 Nov 2011 16:53:22,598 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_AMXServiceProbe_AMXServiceMetricsCollectorComponent_2.1.0:1.0.0
+21 Nov 2011 16:53:22,630 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_AMXServiceProbe_AMXCustomMetricsCollectorComponent_2.1.0:1.0.0
+21 Nov 2011 16:53:23,067 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_pepHttpClient_HttpClientFilterComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:23,083 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_SSOSIP_SsoSipComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:23,114 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_GovernanceAgent_SSOTIP_SsoTipComponent_1.3.0:1.0.0
+21 Nov 2011 16:53:23,130 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_WebSecurityPolicyActions_FormBasedAuthenticationActionComponent_1.0.0:1.0.0
+21 Nov 2011 16:53:23,145 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_WebSecurityPolicyActions_SecurityConstraintActionComponent_1.0.0:1.0.0
+21 Nov 2011 16:53:23,177 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle com.tibco.amx.platform-DevNode_LocalMonitoringComponent_amx.monitoring.service_1.1.0:1.0.0
+21 Nov 2011 16:53:23,192 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle sampledaa_JavaComponent_1.0.0.v2011-11-18-1424:1.0.0
+21 Nov 2011 16:53:23,223 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle sampledaa_JavaComponent_1.0.0.v2011-11-18-1424_inbound_service_NewWSDLFile_NewWSDLFile_SOAPService_Binding1:1.0.0
+21 Nov 2011 16:53:23,239 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle sampledaa_JavaComponent_1.0.0.v2011-11-18-1424_outbound_reference_NewWSDLFile_NewWSDLFile_SOAPService_Binding1_proxy:1.0.0
+21 Nov 2011 16:53:23,239 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle sampledaa_JavaComponent_1.0.0.v2011-11-18-1424_inbound_service_NewWSDLFile_NewWSDLFile_SOAPService_Binding1_proxy:1.0.0
+21 Nov 2011 16:53:23,270 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.hpa.provisioning.hook.EventHook - -1: unrecognized bundle sampledaa_JavaComponent_1.0.0.v2011-11-18-1424_inbound_service_NewWSDLFile_NewWSDLFile_virtualization:1.0.0
+21 Nov 2011 16:53:29,739 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "implementation.java-spring" Version 1.1.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:30,348 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "implementation.webapp" Version 1.1.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:30,520 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.bt.soap - Soap Binding Type started successfully.
+21 Nov 2011 16:53:30,567 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.bt.soap - Soap Binding Type started successfully.
+21 Nov 2011 16:53:30,817 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "binding.soap" Version 1.1.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:30,817 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "messaging.bus.abstract.to.ems.converter" Version 1.0.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:30,817 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "messaging.bus.ems.to.abstract.converter" Version 1.0.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:31,114 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "messaging.bus" Version 1.0.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:31,395 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "binding.jms" Version 1.1.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:31,567 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "binding.tcp" Version 1.1.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:31,708 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.bt.mbean.runtime.MbeanInboundBindingEngine - TIBCO-AMX-BT-MBEAN-910001: MBean Inbound Binding started 
+21 Nov 2011 16:53:31,739 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.bt.mbean.runtime.MbeanOutboundBindingEngine - TIBCO-AMX-BT-MBEAN-920001: MBean Outbound Binding started 
+21 Nov 2011 16:53:31,895 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "binding.mbean" Version 1.0.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:33,458 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "binding.management" Version 1.0.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:34,208 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@1f0fc0c] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#service(ComponentFrameworkStatusNotificationService_MANAGEMENTReference_Binding1_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/S/ComponentFrameworkStatusNotificationService_MANAGEMENTReference_Binding1_proxy Selector= null )].
+21 Nov 2011 16:53:35,208 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.ProviderGroupsRespository - TIBCO-AMX-SV-800038: Provider group [Thread Pool:java.util.concurrent.ThreadPoolExecutor@152701c-SSL:false-QOS:BEST_EFFORT] created.
+21 Nov 2011 16:53:35,301 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "ComponentFrameworkStatusNotificationService" for Reference "MANAGEMENTReference_Binding1" of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:35,630 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@1c7fa1a] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices_1.0.0#reference(ComponentFrameworkStatusNotificationService) DestinationName= urn:amx:2/4/ComponentFrameworkServices/1.0.0/R/ComponentFrameworkStatusNotificationService/DevNode Selector= null )].
+21 Nov 2011 16:53:35,989 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@b867db] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#service(GetComponentDetailService/GetComponentDetailService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/S/GetComponentDetailService/GetComponentDetailService_management_binding_proxy Selector= null )].
+21 Nov 2011 16:53:36,083 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@cc45d2] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(GetComponentDetailService) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(GetComponentDetailService) Selector= null )].
+21 Nov 2011 16:53:36,223 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@197fe9c] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#service(GetComponentFrameworkStatusService/GetComponentFrameworkStatusService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/S/GetComponentFrameworkStatusService/GetComponentFrameworkStatusService_management_binding_proxy Selector= null )].
+21 Nov 2011 16:53:36,301 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@22102f] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(GetComponentFrameworkStatusService) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(GetComponentFrameworkStatusService) Selector= null )].
+21 Nov 2011 16:53:36,473 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@16dce5c] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#service(GetComponentLoggingConfigurationService/GetComponentLoggingConfigurationService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/S/GetComponentLoggingConfigurationService/GetComponentLoggingConfigurationService_management_binding_proxy Selector= null )].
+21 Nov 2011 16:53:36,520 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@1e6823] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(GetComponentLoggingConfigurationService) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(GetComponentLoggingConfigurationService) Selector= null )].
+21 Nov 2011 16:53:36,770 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@1c0cb2e] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#service(SetComponentDependenciesService/SetComponentDependenciesService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/S/SetComponentDependenciesService/SetComponentDependenciesService_management_binding_proxy Selector= null )].
+21 Nov 2011 16:53:36,801 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@1bc1051] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(SetComponentDependenciesService) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(SetComponentDependenciesService) Selector= null )].
+21 Nov 2011 16:53:37,051 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@9cafd8] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#service(SetComponentImplementationAssociationService/SetComponentImplementationAssociationService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/S/SetComponentImplementationAssociationService/SetComponentImplementationAssociationService_management_binding_proxy Selector= null )].
+21 Nov 2011 16:53:37,098 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@18c65e8] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(SetComponentImplementationAssociationService) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(SetComponentImplementationAssociationService) Selector= null )].
+21 Nov 2011 16:53:37,270 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@12c041a] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#service(SetComponentPropertiesService/SetComponentPropertiesService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/S/SetComponentPropertiesService/SetComponentPropertiesService_management_binding_proxy Selector= null )].
+21 Nov 2011 16:53:37,301 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@892ba5] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(SetComponentPropertiesService) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(SetComponentPropertiesService) Selector= null )].
+21 Nov 2011 16:53:37,380 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@5d8d24] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#service(ListComponentsService/ListComponentsService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/S/ListComponentsService/ListComponentsService_management_binding_proxy Selector= null )].
+21 Nov 2011 16:53:37,411 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@1ec1d9b] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(ListComponentsService) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(ListComponentsService) Selector= null )].
+21 Nov 2011 16:53:37,505 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@e50fbf] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#service(ListComponentSummariesService/ListComponentSummariesService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/S/ListComponentSummariesService/ListComponentSummariesService_management_binding_proxy Selector= null )].
+21 Nov 2011 16:53:37,551 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@181c7e9] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(ListComponentSummariesService) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(ListComponentSummariesService) Selector= null )].
+21 Nov 2011 16:53:37,661 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@1891328] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#service(UpdateAllComponentImplementationAssociationService/UpdateAllComponentImplementationAssociationService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/S/UpdateAllComponentImplementationAssociationService/UpdateAllComponentImplementationAssociationService_management_binding_proxy Selector= null )].
+21 Nov 2011 16:53:37,692 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@3cc381] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(UpdateAllComponentImplementationAssociationService) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(UpdateAllComponentImplementationAssociationService) Selector= null )].
+21 Nov 2011 16:53:37,817 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@f3ad6a] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#service(UpdateAllDependentComponentsService/UpdateAllDependentComponentsService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/S/UpdateAllDependentComponentsService/UpdateAllDependentComponentsService_management_binding_proxy Selector= null )].
+21 Nov 2011 16:53:37,848 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@35d72] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(UpdateAllDependentComponentsService) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(UpdateAllDependentComponentsService) Selector= null )].
+21 Nov 2011 16:53:37,880 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "ComponentFrameworkServices" Version 1.0.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:38,130 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@86a5d9] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/GovernanceAgent/PolicyAgent/GovernanceAgentComponent_1.3.0#reference(GovernanceAgentListenerPT) DestinationName= urn:amx:2/4/GovernanceAgent/PolicyAgent/GovernanceAgentComponent/1.3.0/R/GovernanceAgentListenerPT/DevNode Selector= null )].
+21 Nov 2011 16:53:38,723 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@1ca3ebb] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(PolicyAgentPT) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(PolicyAgentPT) Selector= null )].
+21 Nov 2011 16:53:39,067 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@e41022] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(GovernanceAgentPT) DestinationName= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode#service(GovernanceAgentPT) Selector= null )].
+21 Nov 2011 16:53:39,098 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyAgent/GovernanceAgentComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:39,239 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyAgent/PolicyAgentComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:39,426 [ComponentFramework Deployment Thread] [WARN ] org.eclipse.emf.teneo.extension.DefaultExtensionManager - The extension: org.eclipse.emf.teneo.PersistenceOptions is declared as a singleton but this getInstance call  passed initialization parameters so it is not cached, org.eclipse.emf.teneo.PersistenceOptions
+21 Nov 2011 16:53:39,911 [ComponentFramework Deployment Thread] [WARN ] org.eclipse.emf.teneo.hibernate.HbDataStore - No hibernate cache provider set, using org.hibernate.cache.HashtableCacheProvider
+21 Nov 2011 16:53:39,911 [ComponentFramework Deployment Thread] [WARN ] org.eclipse.emf.teneo.hibernate.HbDataStore - For production use please set the ehcache (or other) provider explicitly and configure it
+21 Nov 2011 16:53:39,973 [ComponentFramework Deployment Thread] [WARN ] org.eclipse.emf.teneo.hibernate.HbDataStore - The teneo update schema option is not used anymore for hibernate, use the hibernate option: hibernate.hbm2ddl.auto
+21 Nov 2011 16:53:41,223 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyAgent/PolicyRuntimeStoreComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:41,442 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyAgent/PolicyDecisionPointComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:41,645 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/AuthenticationByJaasComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:41,755 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/CredentialMappingComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:41,911 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/LoggingActionComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:42,020 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/ComponentFrameworkActionComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:42,239 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/SharedResourceManagerComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:42,411 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/AuthenticationActionComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:42,598 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/AuthorizationActionComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:42,739 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/TimeStampActionComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:42,864 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/EncryptionActionComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:42,973 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/SignatureActionComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:43,114 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/WssProcessorActionComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:43,223 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/VerifyDecryptionActionComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:43,364 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/VerifyAuthenticationActionComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:43,505 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/VerifyTimestampActionComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:43,630 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/PolicyActions/AuthenticationBySamlComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:43,833 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/pepHttp/HttpFilterComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:43,989 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/pepSpline/SplineInterceptorComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:44,176 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/pepSvcProxy/SvcProxyPepComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:44,364 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/AMXGovMessageInterceptor/AMXGovMsgInterceptorComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:44,895 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/AMXServiceProbe/AMXServiceProbeComponent" Version 2.1.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:45,020 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/AMXServiceProbe/AMXServiceMetricsCollectorComponent" Version 2.1.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:45,145 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/AMXServiceProbe/AMXCustomMetricsCollectorComponent" Version 2.1.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:45,301 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/pepHttpClient/HttpClientFilterComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:45,458 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/SSOSIP/SsoSipComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:45,630 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "GovernanceAgent/SSOTIP/SsoTipComponent" Version 1.3.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:45,739 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "WebSecurityPolicyActions/FormBasedAuthenticationActionComponent" Version 1.0.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:45,864 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "WebSecurityPolicyActions/SecurityConstraintActionComponent" Version 1.0.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:46,036 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "LocalMonitoringComponent/amx.monitoring.service" Version 1.1.0 of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:46,208 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@cd01a5] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/sampledaa/JavaComponent#service(NewWSDLFile/NewWSDLFile_SOAPService_Binding1_proxy) DestinationName= urn:amx:2/8/JavaComponent/S/NewWSDLFile/NewWSDLFile_SOAPService_Binding1_proxy Selector= null )].
+21 Nov 2011 16:53:46,255 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.ProxyInvocationHandlerRegistry$ProxyInvocationContext@11ecc5] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/sampledaa#service(NewWSDLFile) DestinationName= urn:amx:DevEnvironment/sampledaa#service(NewWSDLFile) Selector= null )].
+21 Nov 2011 16:53:46,301 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Component "JavaComponent" Version 1.0.0.v2011-11-18-1424 of Application "sampledaa".
+21 Nov 2011 16:53:46,364 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@145102] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#reference(ListComponentsService/ListComponentsService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/R/ListComponentsService/ListComponentsService_management_binding_proxy/DevNode Selector= null )].
+21 Nov 2011 16:53:46,411 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "ListComponentsService" for Binding "management_binding" of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:46,473 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@efa7d9] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#reference(GetComponentDetailService/GetComponentDetailService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/R/GetComponentDetailService/GetComponentDetailService_management_binding_proxy/DevNode Selector= null )].
+21 Nov 2011 16:53:46,505 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "GetComponentDetailService" for Binding "management_binding" of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:46,567 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@1d4e832] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#reference(GetComponentFrameworkStatusService/GetComponentFrameworkStatusService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/R/GetComponentFrameworkStatusService/GetComponentFrameworkStatusService_management_binding_proxy/DevNode Selector= null )].
+21 Nov 2011 16:53:46,598 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "GetComponentFrameworkStatusService" for Binding "management_binding" of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:46,661 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@f4fa5] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#reference(GetComponentLoggingConfigurationService/GetComponentLoggingConfigurationService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/R/GetComponentLoggingConfigurationService/GetComponentLoggingConfigurationService_management_binding_proxy/DevNode Selector= null )].
+21 Nov 2011 16:53:46,692 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "GetComponentLoggingConfigurationService" for Binding "management_binding" of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:46,755 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@19e5f17] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#reference(SetComponentDependenciesService/SetComponentDependenciesService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/R/SetComponentDependenciesService/SetComponentDependenciesService_management_binding_proxy/DevNode Selector= null )].
+21 Nov 2011 16:53:46,801 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "SetComponentDependenciesService" for Binding "management_binding" of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:46,848 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@9e6a3] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#reference(SetComponentImplementationAssociationService/SetComponentImplementationAssociationService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/R/SetComponentImplementationAssociationService/SetComponentImplementationAssociationService_management_binding_proxy/DevNode Selector= null )].
+21 Nov 2011 16:53:46,895 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "SetComponentImplementationAssociationService" for Binding "management_binding" of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:46,942 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@15e59dc] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#reference(SetComponentPropertiesService/SetComponentPropertiesService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/R/SetComponentPropertiesService/SetComponentPropertiesService_management_binding_proxy/DevNode Selector= null )].
+21 Nov 2011 16:53:46,973 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "SetComponentPropertiesService" for Binding "management_binding" of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:47,067 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@1f7f272] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#reference(ListComponentSummariesService/ListComponentSummariesService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/R/ListComponentSummariesService/ListComponentSummariesService_management_binding_proxy/DevNode Selector= null )].
+21 Nov 2011 16:53:47,114 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "ListComponentSummariesService" for Binding "management_binding" of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:47,161 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@136c85] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#reference(UpdateAllComponentImplementationAssociationService/UpdateAllComponentImplementationAssociationService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/R/UpdateAllComponentImplementationAssociationService/UpdateAllComponentImplementationAssociationService_management_binding_proxy/DevNode Selector= null )].
+21 Nov 2011 16:53:47,208 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "UpdateAllComponentImplementationAssociationService" for Binding "management_binding" of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:47,255 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@1dbe59e] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/com.tibco.amx.platform-DevNode/ComponentFrameworkServices#reference(UpdateAllDependentComponentsService/UpdateAllDependentComponentsService_management_binding_proxy) DestinationName= urn:amx:2/4/ComponentFrameworkServices/R/UpdateAllDependentComponentsService/UpdateAllDependentComponentsService_management_binding_proxy/DevNode Selector= null )].
+21 Nov 2011 16:53:47,286 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "UpdateAllDependentComponentsService" for Binding "management_binding" of Application "com.tibco.amx.platform-DevNode".
+21 Nov 2011 16:53:48,442 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.internal.messagingbus.ems.inbound.EMSMessagingAdapter - TIBCO-AMX-SV-800001: Activating endpoint with MessageListener [com.tibco.amf.platform.runtime.componentframework.internal.proxies.MessagingBusTargetProxyAdapter@172cfae] and ActivationSpec [(ScaAddress= urn:amx:DevEnvironment/sampledaa/JavaComponent#reference(NewWSDLFile/NewWSDLFile_SOAPService_Binding1_proxy) DestinationName= urn:amx:2/8/JavaComponent/R/NewWSDLFile/NewWSDLFile_SOAPService_Binding1_proxy/DevNode Selector= null )].
+21 Nov 2011 16:53:48,505 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.component.BaseComponent - TIBCO-AMX-CF-000016: Started Endpoint "NewWSDLFile" for Binding "SOAPService_Binding1" of Application "sampledaa".
+21 Nov 2011 16:53:48,536 [ComponentFramework Deployment Thread] [INFO ] com.tibco.amx.cf.logger.lifecycle.internal.core.ComponentFramework - TIBCO-AMX-CF-000009: Started TIBCO ActiveMatrix Component Framework for node DevNode.
+21 Nov 2011 16:55:04,535 [Attach Listener] [INFO ] stdout - JProfiler> Hotspot compiler enabled
+21 Nov 2011 16:55:04,551 [Attach Listener] [INFO ] stdout - JProfiler> Attach mode initialized

@@ -1,0 +1,1 @@
+ - tune the pixel per second of time bar viewer
